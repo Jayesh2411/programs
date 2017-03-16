@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+#include <stdbool.h>
+//implementing sieve of eratosthenes
+
+int main()      {
+
+        unsigned long long int up,lo;
+        printf("Enter lower and upper bound");
+        scanf("%lli",&lo);
+        scanf("%lli",&up);
+        //initialize values to true
+
+        unsigned long long int *index;
+        index=(unsigned long long int*)malloc(sizeof(unsigned long long int)*up);
+        unsigned long long int i,j,k;
+        for(i = lo;i<=up;i++)   {
+                index[i]=1;
+        }
+         long double sq;
+        sq=( long double)up;
+        sq=sqrt(sq);
+        for(i=lo;i<(unsigned long long int)sq;i++)      {
+                if(index[i] == 1)       {
+                        for(j=i*i;j<=up;j=j+i)  {
+                                index[j]=0;
+                        }
+                }
+        }
+        unsigned long int c=0;
+        for(i=lo;i<=up;i++)     {
+                if(index[i] == 1)       {
+                        printf("\n %li:  %lli",c,i);
+                        c++;
+                }
+        }
+        free(index);
+}
+~                                                                                                                                                                         
+~                                                                                                                                                                         
+~                                                                                                                                                                         
+~                                                                                                                                                                         
+            
