@@ -1,0 +1,35 @@
+Algorithm
+r=0,l=7
+mid=r+l/2
+mid=3
+k=5
+Val:   12345678
+index: 01234567
+
+while left<=right
+	if A[left] > k 
+		break
+	if A[mid]>k
+		right=mid
+	if A[mid]<k
+		left=mid+1
+	if A[mid]== k
+		flag =1
+		break
+	mid=l+r/2
+
+if flag == 0
+	return -1
+else
+	return mid
+
+
+
+1006
+6
+6+5*10 56
+56+500 556
+556+1000 1556
+655
+6551
+

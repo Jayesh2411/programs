@@ -1,0 +1,16 @@
+Coding Methods:
+
+ ALWAYS DO THIS:Declare variables with 0.
+ Use bits/stdc++.h for Codes.
+ Write code in manageable manner.
+ Divide and Conquer.
+ Use long data type when required.
+ Use vectors,sets and maps.
+ Always use cin.ignore() before taking a string.
+ Always, Always check for increment and decrement values.
+ Use getline(cin,str); or scanf("%[^\n]s",str); for taking entire lines.
+ Use memset(array,value,n*sizeof(array[0])) for initializing arrays.
+ Always check for base cases.
+ Manage any exception in code i.e. Divide by 0 or Segmentation Fault.
+Avoid using recursive function for large numbers.
+
