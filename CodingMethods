@@ -1,11 +1,12 @@
 Coding Methods:
+//Various important things I came across while coding.
 
  ALWAYS DO THIS:Declare variables with 0.
- Use bits/stdc++.h for Codes.
+ Use bits/stdc++.h wherever required.
  Write code in manageable manner.
  Divide and Conquer.
  Use long data type when required.
- Use vectors,sets and maps.
+ Use vectors,sets and maps as required.
  Always use cin.ignore() before taking a string.
  Always, Always check for increment and decrement values.
  Use getline(cin,str); or scanf("%[^\n]s",str); for taking entire lines.
